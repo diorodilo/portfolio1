@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 
 export default function Hero() {
     return (
@@ -35,8 +35,7 @@ export default function Hero() {
                         rel="noreferrer"
                         className="px-6 py-3.5 glass-panel hover:bg-white/10 text-white font-medium rounded-lg transition-all duration-300 flex items-center space-x-2 border border-white/10 hover:border-neon-cyan/50"
                     >
-                        <Github size={18} />
-                        <span>GitHub Core</span>
+
                     </a>
                 </div>
             </div>
