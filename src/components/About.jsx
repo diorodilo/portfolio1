@@ -3,23 +3,42 @@ import { Layers, Database, Shield, LayoutGrid } from 'lucide-react';
 
 export default function About() {
     const stack = [
-        { title: 'Frontend Architecture', tools: ['React.js', 'Tailwind CSS v4', 'Vite', 'Responsive UX/UI'], icon: <LayoutGrid className="text-neon-cyan" /> },
-        { title: 'Backend Engineering', tools: ['Node.js Systems', 'Express Engine', 'REST Protocols', 'NPM Package Deployment'], icon: <Layers className="text-neon-purple" /> },
-        { title: 'Database Design', tools: ['MySQL Development', 'Relational Schemas', 'Query Balancing'], icon: <Database className="text-accent-pink" /> },
-        { title: 'Systems & Environments', tools: ['Linux Fundamentals', 'Git Architecture', 'Cybersecurity Module Training'], icon: <Shield className="text-emerald-400" /> }
+        { title: 'Frontend Systems', tools: ['React.js', 'Tailwind CSS v4', 'Vite Architecture', 'Responsive UI/UX'], icon: <LayoutGrid className="text-neon-cyan" /> },
+        { title: 'Backend Engine', tools: ['Node.js Systems', 'Express Engine', 'REST APIs', 'NPM Module Dev'], icon: <Layers className="text-neon-purple" /> },
+        { title: 'Data Environments', tools: ['MySQL Design', 'Relational Schemas', 'Query Tuning'], icon: <Database className="text-accent-pink" /> },
+        { title: 'Security & Operations', tools: ['TryHackMe Labs', 'Offensive Modules', 'Git Version Control'], icon: <Shield className="text-emerald-400" /> }
     ];
 
     return (
         <section id="about" className="scroll-mt-24">
+            {/* Studio Render Frame displaying watermarked_img_2451324926098502129.png */}
+            <div className="mb-16 rounded-3xl overflow-hidden glass-panel border border-white/5 relative group aspect-video max-h-[400px] w-full">
+                <div className="absolute inset-0 bg-gradient-to-r from-neon-purple/20 via-transparent to-neon-cyan/20 z-10 pointer-events-none" />
+                <img
+                    src="/watermarked_img_2451324926098502129.png"
+                    alt="Mugisha Working Environment Simulation"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute bottom-6 left-6 z-20 glass-panel px-4 py-2 rounded-xl text-xs font-mono text-slate-300">
+                    IDE Environment: Dev Ecosystem Setup
+                </div>
+            </div>
+
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
                 <div className="lg:col-span-1">
-                    <h2 className="text-3xl font-bold tracking-widest text-neon-cyan uppercase mb-4">// Core Engineering</h2>
+                    <h2 className="text-3xl font-bold tracking-widest text-neon-cyan uppercase mb-4">// Technical Core</h2>
                     <p className="text-slate-400 leading-relaxed mb-6">
-                        A software development engineer deeply committed to structured object hierarchies, syntax integrity, and semantic UI layers. Bridging responsive interactive logic with production-ready systems.
+                        I build inventory managers, school platforms, and civic tools. I also build custom AI agents and produce digital music profiles. My programming logic balances creative UI with stable database architectures.
                     </p>
-                    <div className="p-4 rounded-xl glass-panel border-l-4 border-neon-purple">
-                        <span className="block text-xs uppercase text-slate-400 tracking-wider font-semibold">Operational Hub</span>
-                        <span className="text-white text-lg font-medium">Kigali, Rwanda</span>
+                    <div className="p-4 rounded-xl glass-panel border-l-4 border-neon-purple space-y-2">
+                        <div>
+                            <span className="block text-[11px] uppercase text-slate-400 tracking-wider font-semibold">Institution</span>
+                            <span className="text-white text-sm font-medium">GSNDP Cyanika</span>
+                        </div>
+                        <div>
+                            <span className="block text-[11px] uppercase text-slate-400 tracking-wider font-semibold">Location Focus</span>
+                            <span className="text-white text-sm font-medium">Kigali, Rwanda</span>
+                        </div>
                     </div>
                 </div>
 

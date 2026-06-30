@@ -1,25 +1,31 @@
 import React from 'react';
-import { FolderGit2, ArrowUpRight, HeartHandshake, Layers } from 'lucide-react';
+import { FolderGit2, ArrowUpRight, HeartHandshake, Layers, GraduationCap } from 'lucide-react';
 
 export default function Projects() {
     const portfolioItems = [
         {
             title: 'Rwanda Civic Connect',
-            desc: 'An advanced communications platform bridging systemic reporting links between dynamic citizens and provincial administrative management leadership hubs.',
+            desc: 'Civic engineering platform built to bridge the systemic communication gap between everyday citizens and local administrative leaders.',
             icon: <HeartHandshake className="text-neon-cyan" size={24} />,
-            tags: ['React App', 'Node.js Core', 'MySQL Engine', 'Civic Network']
+            tags: ['React UI', 'Node.js Core', 'MySQL Infrastructure', 'Civic Tech']
         },
         {
             title: 'Berwa Shop Manager',
-            desc: 'Commercial scale retail management stack built for tracking physical item inventory transitions, ledger updates, and layout-driven report printing.',
+            desc: 'An inventory resource platform built for shop managers to effortlessly record items, trace sales transitions, and generate clean document reports.',
             icon: <Layers className="text-neon-purple" size={24} />,
-            tags: ['React Views', 'System State', 'Relational Schemas']
+            tags: ['Full-Stack', 'State Handling', 'Inventory Analytics']
         },
         {
-            title: 'Agnesnavigation Utility',
-            desc: 'Developer environment navigation framework successfully packaged and published into the public global open-source NPM registry ecosystem.',
+            title: 'NEWSI Package',
+            desc: 'Modular workspace navigation utility package written and published cleanly to the public global npm package registry.',
             icon: <FolderGit2 className="text-accent-pink" size={24} />,
-            tags: ['Node Engine', 'NPM Tooling', 'Library Lifecycle']
+            tags: ['Node.js Utility', 'NPM Registry', 'Open Source Dev']
+        },
+        {
+            title: 'Integrated Assessment Suites',
+            desc: 'A suite of system architectures modeling StockHub Ltd, Hospital Management pipelines, and automated School Fee Management frameworks.',
+            icon: <GraduationCap className="text-emerald-400" size={24} />,
+            tags: ['Schema Design', 'Management Ecosystems', 'Academic Core']
         }
     ];
 
@@ -27,10 +33,10 @@ export default function Projects() {
         <section id="projects" className="scroll-mt-24">
             <div className="mb-12">
                 <h2 className="text-3xl font-bold tracking-tight mb-2">Production Environments</h2>
-                <p className="text-slate-400">Functional systems constructed with strict algorithmic flow rules and clean structural visual separation.</p>
+                <p className="text-slate-400">Functional systems built with clean structural logic, high-definition styling, and performance matching production needs.</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {portfolioItems.map((project, idx) => (
                     <div
                         key={idx}

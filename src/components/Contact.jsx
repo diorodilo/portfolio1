@@ -9,8 +9,7 @@ export default function Contact() {
         e.preventDefault();
         setStatus('Processing local link streams...');
 
-        // Completely standalone client logic using localized URI generation
-        const mailtoUri = `mailto:contact@mugisha.dev?subject=Portfolio Connection from ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}%0A%0AFrom Sender Endpoint: ${encodeURIComponent(form.email)}`;
+        const mailtoUri = `mailto:contact@mugisha.dev?subject=Portfolio Connection from ${encodeURIComponent(form.name)}&body=${encodeURIComponent(form.message)}%0A%0ASender Email: ${encodeURIComponent(form.email)}`;
 
         setTimeout(() => {
             window.location.href = mailtoUri;
@@ -26,8 +25,8 @@ export default function Contact() {
 
                     <div className="md:col-span-2 space-y-6">
                         <div>
-                            <h2 className="text-2xl font-bold text-white mb-2">Initialize Streams</h2>
-                            <p className="text-slate-400 text-sm">Direct pipe for structural reviews, architectural audits, or general contact vectors.</p>
+                            <h2 className="text-2xl font-bold text-white mb-2">Connect Gateway</h2>
+                            <p className="text-slate-400 text-sm">Direct pipe for architectural projects, logic audits, or general software connection streams.</p>
                         </div>
 
                         <div className="space-y-4 text-sm text-slate-300">
@@ -49,7 +48,7 @@ export default function Contact() {
                     <form onSubmit={handleSubmit} className="md:col-span-3 space-y-4">
                         <input
                             type="text"
-                            placeholder="Identity / Handle"
+                            placeholder="Identity Name"
                             required
                             className="w-full bg-dark-bg/60 border border-white/10 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-neon-cyan transition-all duration-300"
                             value={form.name}
